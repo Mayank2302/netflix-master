@@ -16,7 +16,6 @@ A basic warmup exercise. Simple, practice oriented, clone of the Netflix Homepag
 
 - HTML
 - CSS
-- Vanilla JS - ES6
 - [Awesomeness](https://www.wikihow.com/Love-Programming) - Strictly for the love of coding :-)
 
 ## What it does
@@ -92,3 +91,8 @@ Contributions are highly welcome. Feel free to fork, clone, make pull requests, 
 
 That being said
 _<p align="center">To the Front... to the Back... End to End... cut no slack. Making ends meet. lol</p>_
+
+
+
+
+
