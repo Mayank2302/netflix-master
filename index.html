@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title></title>
+  </head>
+  <body>
+    <div class="main">
+    <header class="showcase">
+     
+      <div class="showcase-top">
+        <img src="img/logo.png" alt="Netflix" />
+        <a href="#" class="btn btn-rounded">Sign In</a>
+      </div>
+      <div class="showcase-content">
+        <h1>See what's next</h1>
+        <p>Watch anywhere. Cancel anytime</p>
+        <a href="#" class="btn btn-xl"
+          >Watch Free For 30 Days <i class="fas fa-chevron-right btn-icon"></i
+        ></a>
+      </div>
+    </header>
+    <div class="list">
+      <div class="movies-cont container" id="movies-cont">
+        <div class="movies-section">
+            <h2 class="movie-section-heading">Trending Now <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('undefined', 'yt146176')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/179sUCj5AcFKdQpvDhkIX15NRgy.jpg" alt="undefined">
+                <div class="iframe-wrap" id="yt146176"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Rebel Moon - Part One: A Child of Fire', 'yt848326')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/sRLC052ieEzkQs9dEtPMfFxYkej.jpg" alt="Rebel Moon - Part One: A Child of Fire">
+                <div class="iframe-wrap" id="yt848326"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('undefined', 'yt91363')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/xuCHkaxkkm9pPum1SByC0dhvR2U.jpg" alt="undefined">
+                <div class="iframe-wrap" id="yt91363"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Aquaman and the Lost Kingdom', 'yt572802')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/jXJxMcVoEuXzym3vFnjqDW4ifo6.jpg" alt="Aquaman and the Lost Kingdom">
+                <div class="iframe-wrap" id="yt572802"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Saltburn', 'yt930564')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/1jITxVJhkiFJuQuj8NcPLmDNtJg.jpg" alt="Saltburn">
+                <div class="iframe-wrap" id="yt930564"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Oppenheimer', 'yt872585')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg" alt="Oppenheimer">
+                <div class="iframe-wrap" id="yt872585"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Action <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Aquaman and the Lost Kingdom', 'yt572802')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/jXJxMcVoEuXzym3vFnjqDW4ifo6.jpg" alt="Aquaman and the Lost Kingdom">
+                <div class="iframe-wrap" id="yt572802"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Hunger Games: The Ballad of Songbirds &amp; Snakes', 'yt695721')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/5a4JdoFwll5DRtKMe7JLuGQ9yJm.jpg" alt="The Hunger Games: The Ballad of Songbirds &amp; Snakes">
+                <div class="iframe-wrap" id="yt695721"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Silent Night', 'yt891699')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/gg4zZoTggZmpAQ32qIrP5dtnkEZ.jpg" alt="Silent Night">
+                <div class="iframe-wrap" id="yt891699"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Family Plan', 'yt1029575')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/15Fe18IglCCP1jJoj5F529on0IA.jpg" alt="The Family Plan">
+                <div class="iframe-wrap" id="yt1029575"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Freelance', 'yt897087')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/zIYROrkHJPYB3VTiW1L9QVgaQO.jpg" alt="Freelance">
+                <div class="iframe-wrap" id="yt897087"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Fast X', 'yt385687')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/4XM8DUTQb3lhLemJC51Jx4a2EuA.jpg" alt="Fast X">
+                <div class="iframe-wrap" id="yt385687"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Crime <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Silent Night', 'yt891699')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/gg4zZoTggZmpAQ32qIrP5dtnkEZ.jpg" alt="Silent Night">
+                <div class="iframe-wrap" id="yt891699"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Killers of the Flower Moon', 'yt466420')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/1X7vow16X7CnCoexXh4H4F2yDJv.jpg" alt="Killers of the Flower Moon">
+                <div class="iframe-wrap" id="yt466420"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Fast X', 'yt385687')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/4XM8DUTQb3lhLemJC51Jx4a2EuA.jpg" alt="Fast X">
+                <div class="iframe-wrap" id="yt385687"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('El duelo', 'yt1189927')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/dyA6hSkM0rOIOjIAXHPXTiQ0wxO.jpg" alt="El duelo">
+                <div class="iframe-wrap" id="yt1189927"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('John Wick: Chapter 4', 'yt603692')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/7I6VUdPj6tQECNHdviJkUHD2u89.jpg" alt="John Wick: Chapter 4">
+                <div class="iframe-wrap" id="yt603692"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Equalizer 3', 'yt926393')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/tC78Pck2YCsUAtEdZwuHYUFYtOj.jpg" alt="The Equalizer 3">
+                <div class="iframe-wrap" id="yt926393"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Drama <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Hunger Games: The Ballad of Songbirds &amp; Snakes', 'yt695721')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/5a4JdoFwll5DRtKMe7JLuGQ9yJm.jpg" alt="The Hunger Games: The Ballad of Songbirds &amp; Snakes">
+                <div class="iframe-wrap" id="yt695721"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Saltburn', 'yt930564')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/1jITxVJhkiFJuQuj8NcPLmDNtJg.jpg" alt="Saltburn">
+                <div class="iframe-wrap" id="yt930564"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Oppenheimer', 'yt872585')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg" alt="Oppenheimer">
+                <div class="iframe-wrap" id="yt872585"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Killers of the Flower Moon', 'yt466420')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/1X7vow16X7CnCoexXh4H4F2yDJv.jpg" alt="Killers of the Flower Moon">
+                <div class="iframe-wrap" id="yt466420"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Skydog', 'yt755401')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/4mmrgZW9bcgMRFdV1lCcXqCEXEr.jpg" alt="Skydog">
+                <div class="iframe-wrap" id="yt755401"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Rewind', 'yt1143183')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/X8yF6STUk5Zr5nAuLBJiio8Sxh.jpg" alt="Rewind">
+                <div class="iframe-wrap" id="yt1143183"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Comedy <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Family Plan', 'yt1029575')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/15Fe18IglCCP1jJoj5F529on0IA.jpg" alt="The Family Plan">
+                <div class="iframe-wrap" id="yt1029575"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Wonka', 'yt787699')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/bmlkLCjrIWnnZzdAQ4uNPG9JFdj.jpg" alt="Wonka">
+                <div class="iframe-wrap" id="yt787699"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Saltburn', 'yt930564')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/1jITxVJhkiFJuQuj8NcPLmDNtJg.jpg" alt="Saltburn">
+                <div class="iframe-wrap" id="yt930564"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Freelance', 'yt897087')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/zIYROrkHJPYB3VTiW1L9QVgaQO.jpg" alt="Freelance">
+                <div class="iframe-wrap" id="yt897087"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Trolls Band Together', 'yt901362')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/k1KrbaCMACQiq7EA0Yhw3bdzMv7.jpg" alt="Trolls Band Together">
+                <div class="iframe-wrap" id="yt901362"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Chicken Run: Dawn of the Nugget', 'yt520758')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/9jPoyxjiEYPylUIMI3Ntixf8z3M.jpg" alt="Chicken Run: Dawn of the Nugget">
+                <div class="iframe-wrap" id="yt520758"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Adventure <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Aquaman and the Lost Kingdom', 'yt572802')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/jXJxMcVoEuXzym3vFnjqDW4ifo6.jpg" alt="Aquaman and the Lost Kingdom">
+                <div class="iframe-wrap" id="yt572802"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Chicken Run: Dawn of the Nugget', 'yt520758')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/9jPoyxjiEYPylUIMI3Ntixf8z3M.jpg" alt="Chicken Run: Dawn of the Nugget">
+                <div class="iframe-wrap" id="yt520758"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Creator', 'yt670292')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/kjQBrc00fB2RjHZB3PGR4w9ibpz.jpg" alt="The Creator">
+                <div class="iframe-wrap" id="yt670292"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Skydog', 'yt755401')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/4mmrgZW9bcgMRFdV1lCcXqCEXEr.jpg" alt="Skydog">
+                <div class="iframe-wrap" id="yt755401"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Barbie', 'yt346698')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/nHf61UzkfFno5X1ofIhugCPus2R.jpg" alt="Barbie">
+                <div class="iframe-wrap" id="yt346698"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Expend4bles', 'yt299054')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/rMvPXy8PUjj1o8o1pzgQbdNCsvj.jpg" alt="Expend4bles">
+                <div class="iframe-wrap" id="yt299054"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Documentary <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Aquaman: Heroines of Atlantis', 'yt645488')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/originalnull" alt="Aquaman: Heroines of Atlantis">
+                <div class="iframe-wrap" id="yt645488"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Muchachos, la película de la gente', 'yt1206029')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/originalnull" alt="Muchachos, la película de la gente">
+                <div class="iframe-wrap" id="yt1206029"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Soccer Soul', 'yt1192578')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/eFpUSzlVOkMWipG8efjF0YtYffX.jpg" alt="Soccer Soul">
+                <div class="iframe-wrap" id="yt1192578"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Pure Imagination: The Story of Willy Wonka &amp; the Chocolate Factory ', 'yt413393')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/oWpE71ORKX5HUZjeS6fM0gOScQ6.jpg" alt="Pure Imagination: The Story of 'Willy Wonka &amp; the Chocolate Factory'">
+                <div class="iframe-wrap" id="yt413393"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Curry &amp; Cyanide: The Jolly Joseph Case', 'yt1217392')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/j6jTAXID9G6pcRbW3qCgCmXzl7s.jpg" alt="Curry &amp; Cyanide: The Jolly Joseph Case">
+                <div class="iframe-wrap" id="yt1217392"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Above Majestic', 'yt557646')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/5ZIE4dEAYaDoFj3e5mQ2R6TMdQx.jpg" alt="Above Majestic">
+                <div class="iframe-wrap" id="yt557646"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Animation <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Trolls Band Together', 'yt901362')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/k1KrbaCMACQiq7EA0Yhw3bdzMv7.jpg" alt="Trolls Band Together">
+                <div class="iframe-wrap" id="yt901362"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Chicken Run: Dawn of the Nugget', 'yt520758')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/9jPoyxjiEYPylUIMI3Ntixf8z3M.jpg" alt="Chicken Run: Dawn of the Nugget">
+                <div class="iframe-wrap" id="yt520758"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Leo', 'yt1075794')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/9PqD3wSIjntyJDBzMNuxuKHwpUD.jpg" alt="Leo">
+                <div class="iframe-wrap" id="yt1075794"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Migration', 'yt940551')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/ptz5ETMxDoRRiE69BVuIxJzyTEO.jpg" alt="Migration">
+                <div class="iframe-wrap" id="yt940551"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Super Mario Bros. Movie', 'yt502356')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg" alt="The Super Mario Bros. Movie">
+                <div class="iframe-wrap" id="yt502356"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Elemental', 'yt976573')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/4fLZUr1e65hKPPVw0R3PmKFKxj1.jpg" alt="Elemental">
+                <div class="iframe-wrap" id="yt976573"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Romance <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Rewind', 'yt1143183')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/X8yF6STUk5Zr5nAuLBJiio8Sxh.jpg" alt="Rewind">
+                <div class="iframe-wrap" id="yt1143183"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Elemental', 'yt976573')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/4fLZUr1e65hKPPVw0R3PmKFKxj1.jpg" alt="Elemental">
+                <div class="iframe-wrap" id="yt976573"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('My Fault', 'yt1010581')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/lntyt4OVDbcxA1l7LtwITbrD3FI.jpg" alt="My Fault">
+                <div class="iframe-wrap" id="yt1010581"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Little Mermaid', 'yt447277')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/7VEUOEfRzzrQfWddlIyLUKvh6Nf.jpg" alt="The Little Mermaid">
+                <div class="iframe-wrap" id="yt447277"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('After Everything', 'yt820525')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/jkKVLzLWjSvTnc84VzeljhSy6j8.jpg" alt="After Everything">
+                <div class="iframe-wrap" id="yt820525"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Inferno', 'yt10908')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/vRx6kzCItpqwnYCcj2z8qf70gv3.jpg" alt="Inferno">
+                <div class="iframe-wrap" id="yt10908"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Fantasy <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Aquaman and the Lost Kingdom', 'yt572802')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/jXJxMcVoEuXzym3vFnjqDW4ifo6.jpg" alt="Aquaman and the Lost Kingdom">
+                <div class="iframe-wrap" id="yt572802"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Wonka', 'yt787699')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/bmlkLCjrIWnnZzdAQ4uNPG9JFdj.jpg" alt="Wonka">
+                <div class="iframe-wrap" id="yt787699"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Trolls Band Together', 'yt901362')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/k1KrbaCMACQiq7EA0Yhw3bdzMv7.jpg" alt="Trolls Band Together">
+                <div class="iframe-wrap" id="yt901362"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('There is Something in the Barn', 'yt956920')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/jBOyi3ibJbVa1imTCcddPUxTVAV.jpg" alt="There's Something in the Barn">
+                <div class="iframe-wrap" id="yt956920"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Barbie', 'yt346698')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/nHf61UzkfFno5X1ofIhugCPus2R.jpg" alt="Barbie">
+                <div class="iframe-wrap" id="yt346698"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Super Mario Bros. Movie', 'yt502356')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg" alt="The Super Mario Bros. Movie">
+                <div class="iframe-wrap" id="yt502356"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Family <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Wonka', 'yt787699')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/bmlkLCjrIWnnZzdAQ4uNPG9JFdj.jpg" alt="Wonka">
+                <div class="iframe-wrap" id="yt787699"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Trolls Band Together', 'yt901362')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/k1KrbaCMACQiq7EA0Yhw3bdzMv7.jpg" alt="Trolls Band Together">
+                <div class="iframe-wrap" id="yt901362"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Chicken Run: Dawn of the Nugget', 'yt520758')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/9jPoyxjiEYPylUIMI3Ntixf8z3M.jpg" alt="Chicken Run: Dawn of the Nugget">
+                <div class="iframe-wrap" id="yt520758"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Leo', 'yt1075794')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/9PqD3wSIjntyJDBzMNuxuKHwpUD.jpg" alt="Leo">
+                <div class="iframe-wrap" id="yt1075794"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Migration', 'yt940551')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/ptz5ETMxDoRRiE69BVuIxJzyTEO.jpg" alt="Migration">
+                <div class="iframe-wrap" id="yt940551"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Super Mario Bros. Movie', 'yt502356')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg" alt="The Super Mario Bros. Movie">
+                <div class="iframe-wrap" id="yt502356"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Horror <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Thanksgiving', 'yt1071215')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/ktHEdqmMWC1wdfPRMRCTZe2OISL.jpg" alt="Thanksgiving">
+                <div class="iframe-wrap" id="yt1071215"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Slash/Back', 'yt934194')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/vruRG9oFSC2QI3F6vLAsj1ND14S.jpg" alt="Slash/Back">
+                <div class="iframe-wrap" id="yt934194"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('There is Something in the Barn', 'yt956920')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/jBOyi3ibJbVa1imTCcddPUxTVAV.jpg" alt="There's Something in the Barn">
+                <div class="iframe-wrap" id="yt956920"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Five Nights at Freddy s', 'yt507089')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/t5zCBSB5xMDKcDqe91qahCOUYVV.jpg" alt="Five Nights at Freddy's">
+                <div class="iframe-wrap" id="yt507089"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Megaboa', 'yt920081')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/gvNmnvu13TPAewP54hvCyuHwNwR.jpg" alt="Megaboa">
+                <div class="iframe-wrap" id="yt920081"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Godzilla Minus One', 'yt940721')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/bWIIWhnaoWx3FTVXv6GkYDv3djL.jpg" alt="Godzilla Minus One">
+                <div class="iframe-wrap" id="yt940721"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Music <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Trolls Band Together', 'yt901362')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/k1KrbaCMACQiq7EA0Yhw3bdzMv7.jpg" alt="Trolls Band Together">
+                <div class="iframe-wrap" id="yt901362"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Journey to Bethlehem', 'yt1092329')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/3YPP5Buu2lWyRU2YTYRtSqJikWc.jpg" alt="Journey to Bethlehem">
+                <div class="iframe-wrap" id="yt1092329"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('TAYLOR SWIFT | THE ERAS TOUR', 'yt1160164')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/mowTk9LFSr8rW3EG2CUSwzuvx0g.jpg" alt="TAYLOR SWIFT | THE ERAS TOUR">
+                <div class="iframe-wrap" id="yt1160164"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Maestro', 'yt523607')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/et0G74BxoBgNQEZBkUcVhsgeRFF.jpg" alt="Maestro">
+                <div class="iframe-wrap" id="yt523607"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Coco', 'yt354912')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/askg3SMvhqEl4OL52YuvdtY40Yb.jpg" alt="Coco">
+                <div class="iframe-wrap" id="yt354912"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Trolls World Tour', 'yt446893')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/ybGEvB6725PkVuUfEo2txLGRwTj.jpg" alt="Trolls World Tour">
+                <div class="iframe-wrap" id="yt446893"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Science Fiction <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Rebel Moon - Part One: A Child of Fire', 'yt848326')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/sRLC052ieEzkQs9dEtPMfFxYkej.jpg" alt="Rebel Moon - Part One: A Child of Fire">
+                <div class="iframe-wrap" id="yt848326"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Hunger Games: The Ballad of Songbirds &amp; Snakes', 'yt695721')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/5a4JdoFwll5DRtKMe7JLuGQ9yJm.jpg" alt="The Hunger Games: The Ballad of Songbirds &amp; Snakes">
+                <div class="iframe-wrap" id="yt695721"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Doors', 'yt798141')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/1pFSJ9lxMYLkgLS5gmnwm1AEiqx.jpg" alt="Doors">
+                <div class="iframe-wrap" id="yt798141"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Slash/Back', 'yt934194')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/vruRG9oFSC2QI3F6vLAsj1ND14S.jpg" alt="Slash/Back">
+                <div class="iframe-wrap" id="yt934194"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Creator', 'yt670292')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/kjQBrc00fB2RjHZB3PGR4w9ibpz.jpg" alt="The Creator">
+                <div class="iframe-wrap" id="yt670292"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Leave the World Behind', 'yt726209')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/tLsc8SCFO0rMVgVyNm9XtfnyX84.jpg" alt="Leave the World Behind">
+                <div class="iframe-wrap" id="yt726209"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Mystery <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Thanksgiving', 'yt1071215')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/ktHEdqmMWC1wdfPRMRCTZe2OISL.jpg" alt="Thanksgiving">
+                <div class="iframe-wrap" id="yt1071215"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Skydog', 'yt755401')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/4mmrgZW9bcgMRFdV1lCcXqCEXEr.jpg" alt="Skydog">
+                <div class="iframe-wrap" id="yt755401"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Five Nights at Freddys', 'yt507089')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/t5zCBSB5xMDKcDqe91qahCOUYVV.jpg" alt="Five Nights at Freddy's">
+                <div class="iframe-wrap" id="yt507089"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Leave the World Behind', 'yt726209')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/tLsc8SCFO0rMVgVyNm9XtfnyX84.jpg" alt="Leave the World Behind">
+                <div class="iframe-wrap" id="yt726209"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Nun II', 'yt968051')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/pLm9j7o5InoWaG2tlaQABYR2cAx.jpg" alt="The Nun II">
+                <div class="iframe-wrap" id="yt968051"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Immersion', 'yt1114205')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/1Kqp15MtZED7IVXFxNy9jXlX6xd.jpg" alt="Immersion">
+                <div class="iframe-wrap" id="yt1114205"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">TV Movie <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('12 Dares of Christmas', 'yt1157181')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/uJYgeaaggcwx1IDyse3KHukZPnB.jpg" alt="12 Dares of Christmas">
+                <div class="iframe-wrap" id="yt1157181"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Meteor Storm', 'yt55241')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/vDRcux3EHYluUF1TTi2DcE1K98Q.jpg" alt="Meteor Storm">
+                <div class="iframe-wrap" id="yt55241"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Christmas by Candlelight', 'yt1142366')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/5j5a0IBNNaINTOvQioPr0qDta8x.jpg" alt="Christmas by Candlelight">
+                <div class="iframe-wrap" id="yt1142366"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('EXmas', 'yt1192745')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/rQLwcuKZYjqADTbQedJMvQZ4wgC.jpg" alt="EXmas">
+                <div class="iframe-wrap" id="yt1192745"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Amazing Mr. Blunden', 'yt897992')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/465lDg7GcS97w7ei7r5l27GlrAH.jpg" alt="The Amazing Mr. Blunden">
+                <div class="iframe-wrap" id="yt897992"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Teen Titans: Trouble in Tokyo', 'yt16237')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/aLnB8TBzELe4Nfc3oKrAmSFMupT.jpg" alt="Teen Titans: Trouble in Tokyo">
+                <div class="iframe-wrap" id="yt16237"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">History <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Oppenheimer', 'yt872585')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg" alt="Oppenheimer">
+                <div class="iframe-wrap" id="yt872585"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Killers of the Flower Moon', 'yt466420')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/1X7vow16X7CnCoexXh4H4F2yDJv.jpg" alt="Killers of the Flower Moon">
+                <div class="iframe-wrap" id="yt466420"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Napoleon', 'yt753342')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/f1AQhx6ZfGhPZFTVKgxG91PhEYc.jpg" alt="Napoleon">
+                <div class="iframe-wrap" id="yt753342"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Princess Khutulun', 'yt960481')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/awWppR6CmJ6gqM6UjMz5DJ4zZaP.jpg" alt="Princess Khutulun">
+                <div class="iframe-wrap" id="yt960481"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Hacksaw Ridge', 'yt324786')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/yQIBS8B9l2qXoPoPtxSXvH7CfoT.jpg" alt="Hacksaw Ridge">
+                <div class="iframe-wrap" id="yt324786"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Survivor', 'yt606870')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/2X7BAu7x2oMB3cTMF38uJhGSqoB.jpg" alt="The Survivor">
+                <div class="iframe-wrap" id="yt606870"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Thriller <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Saltburn', 'yt930564')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/1jITxVJhkiFJuQuj8NcPLmDNtJg.jpg" alt="Saltburn">
+                <div class="iframe-wrap" id="yt930564"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Thanksgiving', 'yt1071215')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/ktHEdqmMWC1wdfPRMRCTZe2OISL.jpg" alt="Thanksgiving">
+                <div class="iframe-wrap" id="yt1071215"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Fast X', 'yt385687')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/4XM8DUTQb3lhLemJC51Jx4a2EuA.jpg" alt="Fast X">
+                <div class="iframe-wrap" id="yt385687"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Slash/Back', 'yt934194')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/vruRG9oFSC2QI3F6vLAsj1ND14S.jpg" alt="Slash/Back">
+                <div class="iframe-wrap" id="yt934194"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Skydog', 'yt755401')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/4mmrgZW9bcgMRFdV1lCcXqCEXEr.jpg" alt="Skydog">
+                <div class="iframe-wrap" id="yt755401"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Leave the World Behind', 'yt726209')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/tLsc8SCFO0rMVgVyNm9XtfnyX84.jpg" alt="Leave the World Behind">
+                <div class="iframe-wrap" id="yt726209"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">Western <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Dead for a Dollar', 'yt843380')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/15BnuDQ8pYRmLqPZKAk5vIhUu9J.jpg" alt="Dead for a Dollar">
+                <div class="iframe-wrap" id="yt843380"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('A Tale of Two Guns', 'yt940175')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/LfUXJQOhBa0cfQsGnYwuSUaHId.jpg" alt="A Tale of Two Guns">
+                <div class="iframe-wrap" id="yt940175"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Redeeming Love', 'yt698508')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/lD8dFIk9wDEvOwZw0RB47e346io.jpg" alt="Redeeming Love">
+                <div class="iframe-wrap" id="yt698508"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('No Name and Dynamite', 'yt709334')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/9NDiFyiMYcQHFGYZIKtL6w3JoAl.jpg" alt="No Name and Dynamite">
+                <div class="iframe-wrap" id="yt709334"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('The Good, the Bad and the Ugly', 'yt429')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/eoCSp75lxatmIa6aGqfnzwtbttd.jpg" alt="The Good, the Bad and the Ugly">
+                <div class="iframe-wrap" id="yt429"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Gunfight at Rio Bravo', 'yt835767')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/x7x6NT1JcdqxK8GlAWFhm3mzHnV.jpg" alt="Gunfight at Rio Bravo">
+                <div class="iframe-wrap" id="yt835767"></div>
+            </div>
+            </div>
+        </div><div class="movies-section">
+            <h2 class="movie-section-heading">War <span class="explore-nudge">Explore All</span></h2>
+            <div class="movies-row">
+                
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Condor Nest', 'yt1062482')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/uSUjIzqKyebAd2wqDyb11Ya4wch.jpg" alt="Condor's Nest">
+                <div class="iframe-wrap" id="yt1062482"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Napoleon', 'yt753342')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/f1AQhx6ZfGhPZFTVKgxG91PhEYc.jpg" alt="Napoleon">
+                <div class="iframe-wrap" id="yt753342"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Come Out Fighting', 'yt1047925')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/iaMIylLoN7Y3CvrA0pg2ZFKjk26.jpg" alt="Come Out Fighting">
+                <div class="iframe-wrap" id="yt1047925"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Uri: The Surgical Strike', 'yt554600')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/S3EIcOUQYxgd3QzjOo2rZJ2MN8.jpg" alt="Uri: The Surgical Strike">
+                <div class="iframe-wrap" id="yt554600"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Hacksaw Ridge', 'yt324786')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/yQIBS8B9l2qXoPoPtxSXvH7CfoT.jpg" alt="Hacksaw Ridge">
+                <div class="iframe-wrap" id="yt324786"></div>
+            </div>
+            <div class="movie-item" onmouseenter="searchMovieTrailer('Guy Ritchie s The Covenant', 'yt882569')">
+                <img class="move-item-img" src="https://image.tmdb.org/t/p/original/eTvN54pd83TrSEOz6wbsXEJktCV.jpg" alt="Guy Ritchie's The Covenant">
+                <div class="iframe-wrap" id="yt882569"></div>
+            </div>
+            </div>
+        </div></div>
+    </div>
+
+    <section class="tabs">
+      <div class="container">
+        <div id="tab-1" class="tab-item tab-border">
+          <i class="fas fa-door-open fa-3x"></i>
+          <p class="hide-sm">Cancel Anytime</p>
+        </div>
+        <div id="tab-2" class="tab-item">
+          <i class="fas fa-tablet-alt fa-3x"></i>
+          <p class="hide-sm">Watch anywhere</p>
+        </div>
+        <div id="tab-3" class="tab-item">
+          <i class="fas fa-tags fa-3x"></i>
+          <p class="hide-sm">Pick your price</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-content">
+      <div class="container">
+        <!-- Tab Content 1 -->
+        <div id="tab-1-content" class="tab-content-item show">
+          <div class="tab-1-content-inner">
+            <div>
+              <p class="text-lg">
+                If you decide Netflix isn't for you - no problem. No commitment.
+                Cancel online anytime.
+              </p>
+              <a href="#" class="btn btn-lg">Watch Free for 30 days</a>
+            </div>
+            <img src="img/tab-content-1.png" alt="" />
+          </div>
+        </div>
+
+        <!-- Tab Content 2 -->
+        <div id="tab-2-content" class="tab-content-item">
+          <div class="tab-2-content-top">
+            <p class="text-lg">
+              Watch TV shows and movies anytime, anywhere - personalized for
+              you.
+            </p>
+            <a href="#" class="btn btn-lg">Watch Free for 30 days</a>
+          </div>
+          <div class="tab-2-content-bottom">
+            <div>
+              <img src="img/tab-content-2-1.png" alt="" />
+              <p class="text-md">Watch on your TV</p>
+              <p class="text-dark">
+                Smart TVs, PlayStation, Xbox, Chromecase, Apple TV, Blu-ray
+                players and more.
+              </p>
+            </div>
+
+            <div>
+              <img src="img/tab-content-2-2.png" alt="" />
+              <p class="text-md">Watch instantly or download for later</p>
+              <p class="text-dark">
+                Available on phone and tablet, wherever you go
+              </p>
+            </div>
+
+            <div>
+              <img src="img/tab-content-2-3.png" alt="" />
+              <p class="text-md">Use any computer</p>
+              <p class="text-dark">
+                Watch right on Netflix.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Content 3 -->
+        <div id="tab-3-content" class="tab-content-item">
+          <div class="text-center">
+            <p class="text-lg">
+              Choose one pland and watch everything on Netflix
+            </p>
+            <a href="#" class="btn btn-lg">Watch Free For 30 days</a>
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Basic</th>
+                <th>Standard</th>
+                <th>Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly price after free month ends on 6/19/19</td>
+                <td>$8.99</td>
+                <td>$12.99</td>
+                <td>$15.99</td>
+              </tr>
+              <tr>
+                <td>HD Available</td>
+                <td><i class="fas fa-times"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>Ultra HD Available</td>
+                <td><i class="fas fa-times"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>Screens you can watch at the same time</td>
+                <td><i class="fas fa-times"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>Watch on your laptop, TV, phone and tablet</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>Unlimited Movies and TV shows</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>Cancel anytime</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>First month Free</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Questions? Call 1-866-579-7127</p>
+      <div class="footer-cols">
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Ways To Watch</a></li>
+          <li><a href="#">Corporate Information</a></li>
+          <li><a href="#">Netflix Originals</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Redeem Gift Cards</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Speed Test</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Buy Gift Cards</a></li>
+          <li><a href="#">Cookie Preferences</a></li>
+          <li><a href="#">Legal Notices</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
