@@ -1,6 +1,6 @@
 # Netflix Clone
 
-Clone of the Netflix website as a light HTML CSS and JS excercise - [Take a look](https://github.com/Mayank2302/netflix-master/)
+Clone of the Netflix website as a light HTML CSS and JS excercise - [Take a look](https://mayank2302.github.io/netflix-master/)
 
 
 _<p align="center">"Eating website for fun... nyom nyom nyom"</p>_
@@ -91,6 +91,6 @@ _<p align="center">To the Front... to the Back... End to End... cut no slack. Ma
 
 
 
-Link -- https://github.com/Mayank2302/netflix-master/
+Link -- https://mayank2302.github.io/netflix-master/
 
 
